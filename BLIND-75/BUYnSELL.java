@@ -27,23 +27,26 @@ class BUYnSELL{
 
     }
     
-    int largestdiff = 0;
+    int min_so_far = array[0];
 
-    int currentdiff;
-    
+    int max = 0;
+
     for(int i = 0; i < n; i++){
-      for(int j = i + 1; j < n; j++){
 
-        currentdiff = array[j] - array[i];
-
-        if(currentdiff > largestdiff){
-          largestdiff = currentdiff;
-        }
-
-      }
+      min_so_far = Math.min(min_so_far, array[i]);
+      int profit = array[i] - min_so_far;
+      max = Math.max(profit, max);
+      
     }
 
-    System.out.println(largestdiff);
+  
+
+
+
+
+
+   
+    System.out.println(max);
 
 //    for(int i = 0; i < n; i++){
   //    System.out.println(array[i]);
@@ -54,6 +57,14 @@ class BUYnSELL{
 
 
 }
+
+//[1, 2, 4, 4, 5, 7]
+//min_so_far = 0
+//max = 1
+//min = math.min(min, a[i])
+//max = max - min
+//max = math.max(max, 
+//
 
 
 
