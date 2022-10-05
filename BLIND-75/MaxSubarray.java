@@ -38,27 +38,21 @@ class MaxSubarray{
     //  cur = 0
     //  return max
     //
-    int Current_sum = 0;
-    int Max_sum = 0;
+    int Current_sum = array[0];
+    int Max_sum = array[0];
 
-    for(int i = 0; i < n; i++){
 
       //kadane's algo COCKSUCKA
+      //[2, -1, 2, 3, 5, -6, 7]
 
-      Current_sum = Current_sum + array[i];
+      for(int i = 1; i < n; i++){
 
-      if(Current_sum > Max_sum){
-        Max_sum = Current_sum;
+        int nums = array[i];
+
+        Current_sum = Math.max(nums, (array[i] + array[i - 1]));
+        Max_sum = Math.max(Current_sum, Max_sum);
+
       }
-
-      if(Current_sum < 0){
-        Current_sum = 0;
-      }
-
-
-
-    }
-
 
     System.out.println(Max_sum);
 
