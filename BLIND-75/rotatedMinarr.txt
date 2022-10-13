@@ -1,0 +1,38 @@
+
+
+
+
+
+[1, 2, 3, 4, 5]
+
+
+return arr[0];
+
+
+[3, 4, 5, 1, 2]
+
+l = 0
+h = arr.length
+
+mid = l+ h /2
+
+
+
+if(mid > low){
+  go right and find out
+}
+else{
+  go left and find out
+}
+
+
+
+
+
+[7, 1, 2, 3, 4, 5, 6]
+
+
+
+
+
+
