@@ -4,6 +4,7 @@
 **/
 
 
+
 import java.util.*;
 
 
@@ -11,43 +12,53 @@ class MaxProductSubarray{
   
   public static void main(String[] args){
 
-  Scanner input = new Scanner(System.in);
-
-  int n = input.nextInt();
-
-  int[] arr = new int[n];
+    Scanner input = new Scanner(System.in);
 
 
-  for(int i = 0; i < n; i++){
-    arr[i] = input.nextInt();
-  }
+    int n = input.nextInt();
 
+
+    int[] arr_p = new int[n];
+
+
+    for(int i = 0; i < n; i ++){
   
-  int product = arr[0];
-  int max = arr[0];
-  int min = arr[0];
+      arr_p[i] = input.nextInt();
+
+    }
 
 
-  for(int i = 1; i < n; i ++){
+   int result = Arrays.stream(arr_p).max().getAsInt();
 
-    int temp_max = Math.max(arr[i]*max, Math.max(arr[i] * min, arr[i]));
-    min =  Math.min(arr[i]*max, Math.min(arr[i] * min, arr[i]));
+   int Current_max = 1;
+   int Current_min = 1;
+   
 
+   for(int i = 0; i < n; i ++){
+
+    int num = arr_p[i] ;
+
+    int temp = Current_max * num;
     
-    max = temp_max;
+    Current_max = Math.max((Current_max * num), (Current_min * num));
+    Current_max = Math.max(Current_max, num);
+    Current_min = Math.min(temp, (Current_min * num));
+    Current_min = Math.min(Current_min, num);
 
-    product = Math.max(product, max);
+    result = Math.max(result, Current_max);
+    result = Math.max(result, num);
+
+
+   }
+
+   System.out.println(result);
 
 
   }
-
-  System.out.println(product);
-
-  }
-
 
 
 }
+
 
 
 
