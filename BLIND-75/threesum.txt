@@ -1,0 +1,23 @@
+
+
+1. check base condition
+if array empty or not
+
+2. create a list
+store the result in the list
+
+3. two loops
+for 1st int [i]
+for two sum of other 2 integers
+in that two sum loop if same numbers incerement and decrement
+
+4. For the main loop
+i++ if its the same value after it.
+
+
+
+
+
+
+
+
