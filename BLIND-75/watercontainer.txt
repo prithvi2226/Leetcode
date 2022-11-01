@@ -1,0 +1,39 @@
+
+
+
+
+
+WATER CONTAINER
+
+
+
+
+height = [1, 8, 6, 2, 5, 4, 8, 3, 7]
+
+left = 0
+right = 8
+
+width = left - right = 8 - 0= 8
+height = min(height[left], height[right]) = 1
+
+min?? -> else the water will pour out;
+
+
+area = height * width;
+
+if hieght[left] < height[right]:
+  left ++;
+
+else height[left] > height[right]:
+  right --;
+
+
+else (height[left] == height[right]):
+  right --;
+
+
+
+
+
+
+

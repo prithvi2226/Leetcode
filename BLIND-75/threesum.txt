@@ -19,5 +19,96 @@ i++ if its the same value after it.
 
 
 
+[-1, 0, 1, 2, -1, 4]
+
+sort
+
+-1, -1, 0, 1, 2, 4
+
+a[i] = -1
+a[left] = -1
+a[right] = 4
+
+i = 0
+left = 1
+right = 6
+
+-1-1+4 = 2
+
+= 0? = NO
+
+< 0? = NO
+
+>0 = YES
+right --
+
+
+a[i] = -1
+a[left] = -1
+a[right] = 2
+
+i = 0
+left = 1
+right = 5
+
+-1-1+2
+= 0 = yes
+
+check duplicates??
+lv = a[left]
+while(left < right && a[left] == lv)
+left ++
+
+rv = a[right]
+while(right > left && a[right] == rv)
+right ++
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
