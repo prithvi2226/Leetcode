@@ -1,0 +1,24 @@
+
+
+2 + 3
+
+2->      0010 -> a
+3->      0011 -> b
+
+a^b    (0)0001 -> a
+a&b(<<1)0010(0)  -> b
+
+ 0001
+0010
+
+a^b  -> 00101 -> 5
+
+Since our new b starts with a zero after shifting to left,
+      we will end the loop. If it were to start from '1',
+      we were to conintue the loop and continue doing this
+      same shit again and again till we get the start of variable
+      b(which is the result of a&b).
+
+
+
+
