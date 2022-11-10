@@ -1,0 +1,33 @@
+
+
+
+
+
+Basically, we are using a DP solution
+
+so, what we wll do is 
+
+we have an array
+
+{7, 5, 1}
+
+and we have to make 18 out of these coins 
+
+
+				18
+			{7, 5, 1}
+			/	|	\		
+		   11  13   17
+	{7, 5, 1}{7, 5, 1}{7, 5, 1}
+	/	|  \  /  |  \  /  |  \
+	4   6  10 6  8  12 10 12  16
+
+
+THE function will keep going regardless and and compares itself with the last recursive answer
+And it will return the minimum of those two
+
+
+
+
+
+
