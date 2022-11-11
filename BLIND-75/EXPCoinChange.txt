@@ -27,6 +27,10 @@ THE function will keep going regardless and and compares itself with the last re
 And it will return the minimum of those two
 
 
+So thats where we use DP
+
+
+
 
 
 

@@ -7,48 +7,39 @@
 
 */
 
+
 import java.util.*;
 
 
-class CoinChange{
+public class CoinChange{
 	public static void main(String[] args) {
-
-		int n = 18;
-		int a[] = {7, 5, 1};
-
-		int ans = minCoins(n, a);
-		System.out.println(ans);
 		
-	}
+		int amount = 2;
+		int coins[] = {3};
 
-static int minCoins(int n, int a[]){
+		int dp[] = new int[amount + 1];
 
-	if(n == 0){
-		return 0;
-	}
+		Arrays.fill(dp, amount + 1);
 
-	int Ans = Integer.MAX_VALUE;
+		dp[0] = 0;
 
-	for(int i = 0; i < a.length; i ++){
-		
-		if(n - a[i] >= 0){
-			int subAns = minCoins(n - a[i], a);	
-
-			System.out.println("Subans is " +subAns+ " array value at index " +i+ " is " +(a[i])+ " with value to be made " +(n - a[i]));
-			if(subAns + 1 < Ans){
-				Ans = subAns + 1;
+		for(int i = 1; i <= amount; i++){
+			for(int coin : coins){
+				if(i - coin >= 0){
+					dp[i] = Math.min(1 + dp[i - coin], dp[i]);
+				}
 			}
-			System.out.println("Ans is " +Ans);
-		}	
-
-
+		}
+		if(dp[amount] != amount + 1){
+			System.out.println(dp[amount]);
+		}
+		else{
+			System.out.println(-1);
 		}
 
-		return Ans;
-
 	}
-}
 
+}
 
 
 
