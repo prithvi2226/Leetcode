@@ -3,61 +3,61 @@
 
 
 
-Basically, we are using a DP solution
+	Basically, we are using a DP solution
 
-so, what we wll do is 
+	so, what we wll do is 
 
-we have an array
+	we have an array
 
-{7, 5, 1}
+	{7, 5, 1}
 
-and we have to make amount 18 out of these coins 
-
-
-				18
-			{7, 5, 1}
-			/	|	\		
-		   11  13   17
-	{7, 5, 1}{7, 5, 1}{7, 5, 1}
-	/	|  \  /  |  \  /  |  \
-	4   6  10 6  8  12 10 12  16
-
-Notice that 6 is repeated, 10 is repeated and 12 is repeated in the given tree.
-Basically we the extra 6's and 10's are pretty waste of memory and time.
-Thats why we are goin to use Dynamic Programming on this.
-
-Basically lets divide the task and understand the main logic:
+	and we have to make amount 18 out of these coins 
 
 
-1. 	Consider there is a DP array of (amount value) number of elements and for the example lets take
-	take 11 as target value so there would be total of amount + 1 i.e. 12 elements including the 0th 
-	element.
+					18
+				{7, 5, 1}
+				/	|	\		
+			   11  13   17
+		{7, 5, 1}{7, 5, 1}{7, 5, 1}
+		/	|  \  /  |  \  /  |  \
+		4   6  10 6  8  12 10 12  16
 
-2.	Then we going to fill the array with max value possible any max value i took the value 12 i.e. amount + 1.
-	And set dp[0] to 0 because for a value of 0 u need 0 coins.
+	Notice that 6 is repeated, 10 is repeated and 12 is repeated in the given tree.
+	Basically we the extra 6's and 10's are pretty waste of memory and time.
+	Thats why we are goin to use Dynamic Programming on this.
 
-	___0____1_____2_____3____4______5_____6_____7_____8____9_____10____11___          
-	|_0__|_12__|_12__|_12__|_12__|_12__|_12__|_12__|_12__|_12__|_12__|_12__|  
+	Basically lets divide the task and understand the main logic:
 
-3.	Now lets do it one by one, so  we are going to start by small to the target. We start by if we had a target value as
-	1. so first we will check thru the coin array which is [1, 5, 7]. For coin[0] which is 1, is it less than or equal to
-	our target value and it is. then we will execute the main function. which is:
 
-		1.	we gonna subtract (target value)1 - 1(coin value) = 0 
-		2.	value from step 1 will be compared to the dp array value at that position.
+	1. 	Consider there is a DP array of (amount value) number of elements and for the example lets take
+		take 11 as target value so there would be total of amount + 1 i.e. 12 elements including the 0th 
+		element.
 
-			dp[1] = min(1 + dp[target value - coin value], dp[1]) now dp[0] is 0 so 1 + 0 = 1
-			and before at dp[1] there was 12 now it will change to 1 as 1 is smaller than 12.
+	2.	Then we going to fill the array with max value possible any max value i took the value 12 i.e. amount + 1.
+		And set dp[0] to 0 because for a value of 0 u need 0 coins.
 
-4.	Hence these steps will iterate thru all the possibilities before and return the smallest.
-	
-	dp[0] = 0, dp[1] = 1, dp[2] = 2, dp[3] = 3, dp[4] = 4, dp[5] = 1.
-	These are the most min coins for those values.
-	and all these values are found on the basis of the previous element. like how many coins did value 2
-	take to make up to that value and that many values plus 1 coin would make up to 3.
-	Hence every sol for a value is dependent upon the previous values.
+		___0____1_____2_____3____4______5_____6_____7_____8____9_____10____11___          
+		|_0__|_12__|_12__|_12__|_12__|_12__|_12__|_12__|_12__|_12__|_12__|_12__|  
 
-	THANK GOD I UNDERSTOOD THIS SHIT
+	3.	Now lets do it one by one, so  we are going to start by small to the target. We start by if we had a target value as
+		1. so first we will check thru the coin array which is [1, 5, 7]. For coin[0] which is 1, is it less than or equal to
+		our target value and it is. then we will execute the main function. which is:
+
+			1.	we gonna subtract (target value)1 - 1(coin value) = 0 
+			2.	value from step 1 will be compared to the dp array value at that position.
+
+				dp[1] = min(1 + dp[target value - coin value], dp[1]) now dp[0] is 0 so 1 + 0 = 1
+				and before at dp[1] there was 12 now it will change to 1 as 1 is smaller than 12.
+
+	4.	Hence these steps will iterate thru all the possibilities before and return the smallest.
+		
+		dp[0] = 0, dp[1] = 1, dp[2] = 2, dp[3] = 3, dp[4] = 4, dp[5] = 1.
+		These are the most min coins for those values.
+		and all these values are found on the basis of the previous element. like how many coins did value 2
+		take to make up to that value and that many values plus 1 coin would make up to 3.
+		Hence every sol for a value is dependent upon the previous values.
+
+		THANK GOD I UNDERSTOOD THIS SHIT
 
 
 
