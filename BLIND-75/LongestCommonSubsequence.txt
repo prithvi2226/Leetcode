@@ -1,0 +1,29 @@
+
+
+
+Longest Common Subsequence
+
+
+text1 = abcde
+text2 = ace
+
+
+2-D Dynamic Programming
+
+
+		  a c e
+		a 0 0 0
+		b 0 0 0
+		c 0 0 0
+		d 0 0 0
+		e 0 0 0
+
+
+
+if text1 = text2 :
+	[i][j] = 1
+	else:
+	max([i][j+1], [i+1][j])
+
+return [text1.length][text2.length]
+
