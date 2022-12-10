@@ -6,16 +6,17 @@
 	Date: 09 - 12 - 22
 
 */
-
+/*
 #include<iostream>
 #include<cstdlib>
+#include<vector>
 
-int combination(int array[], int goal, int size);
+int combination(vecor<int> &num, int goal);
 using namespace std;
 
 
-int combination(int array[], int goal, int size){
-
+int combination(vector<int> &num, int goal){
+   
 	//Base case
 
 	if(goal == 0){
@@ -27,9 +28,9 @@ int combination(int array[], int goal, int size){
 
 	int sum = 0;
 
-	for(int i = 0; i < size; i ++){
+	for(int i = 0; i < num.size(); i ++){
 
-		sum = sum + combination(array, goal - array[i], size);
+		sum = sum + combination(num, goal - num[i]);
 	
 	}
 	cout << sum << endl;
@@ -41,18 +42,50 @@ int combination(int array[], int goal, int size){
 
 int main(int argc, char const *argv[])
 {
-	int arr[] = {1, 2};
+	vector<int> num{1, 2};
 
 	int target = 3;
 
-	int len = (sizeof(arr)/ sizeof(arr[0]));
 
-	return combination(arr, target, len);
+	return combination(num, target);
 
 	//return 0;
 }
 
+*/
+class Solution {
+public:
+    int combinationSum4(vector<int>& nums, int target) {
 
+        vector<int>& dp(target+1, -1); 
+        return solveMem(nums, target, dp);
+    }
+
+private:
+    int solveMem(vector<int>& num, int tar, vector<int>& dp){
+        if(tar == 0){
+		    return 1;
+	    }
+	    if(tar < 0){
+		    return 0;
+	    }
+        if(dp[target] != -1){
+            return dp[target];
+        }
+
+	    int sum = 0;
+
+	    for(int i = 0; i < num.size(); i ++){
+
+		    sum = sum + solveMem(num, tar - num[i], dp);
+	
+	    }
+	//cout << sum << endl;
+        dp[target] = sum;
+	    return dp[target];
+    }
+
+};
 
 
 
