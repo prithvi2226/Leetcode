@@ -1,0 +1,21 @@
+
+
+word = "neetcode"
+
+Dict = ["neet", "code", "leet"]
+
+
+
+nums = [1, 2, 3] 
+target = 4
+
+
+1 + 1 < 4?
+1 + 1 > 4?
+1 + 1 = 4?
+
+1 + 2
+
+
+
+
