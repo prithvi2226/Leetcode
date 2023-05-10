@@ -1,2 +1,2 @@
-# Leetcode
-All my solved leetcode problems.
+# CRACK ANY COMPANY INTW
+
