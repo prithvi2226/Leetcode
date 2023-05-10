@@ -1,4 +1,5 @@
-When a function calls itself UNTIL a specific condition is met
+Recursion
+**When a function calls itself UNTIL a specific condition is met**
 
 ### RECURSION TREE
 
