@@ -4,3 +4,81 @@ Recursion
 ### RECURSION TREE
 
 Every function in the recursion call is truncated into trees like structure so that we dont have to write the functions again and again
+
+### 2. Print The Name N times Using Recursion
+
+```c++
+int main(){
+	int n;
+	cin >> n;
+	f(1, n);
+}
+```
+
+Time Complexity - O(n) - function calling n times.
+Space Complexity - O(n) - function being stored in the stack for n times.
+
+### 3. Backtracking Summation
+
+### 4. Functional Recursion
+
+
+```cpp
+f(n){
+	if(n==0){
+	return 0;
+	}
+
+	return n + f(n-1);
+}
+```
+lets say f(3) {in the main function n is 3}
+
+```cpp
+f(3){
+	if(n==0){
+	return 0;
+	}//not 0
+
+	return 3 + f(n-1);
+}
+```
+So, after return n + f(n-1); the function will wait for f(n-1).
+and it will again got to
+f(n-1)
+```cpp
+f(2){
+	if(n==0){
+	return 0;
+	}// 2 is not 0 hence wont go in this condition
+
+	return 2 + f(n-1);
+}
+```
+
+f(n-1)
+```cpp
+f(1){
+	if(n==0){
+	return 0;
+	}
+
+	return 1 + f(n-1);
+}
+```
+
+f(n-1)
+```cpp
+f(0){
+	if(n==0){
+	return 0;
+	}// Yes it will return 0 now
+
+	return //2 + f(n-1);
+}
+
+Now as the function hits the base case, it returns a 0 and it backtracks to f(1) wit the
+value 0. And then f(1) returns with 1 + 0, and it again backtracks to f(2) with value 1;
+and f(2) returns with value 2+1 and finally finishes f(3) with value 3 + (3) = 6. Nice
+
+
