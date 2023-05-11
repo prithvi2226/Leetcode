@@ -76,9 +76,28 @@ f(0){
 
 	return //2 + f(n-1);
 }
-
+```
 Now as the function hits the base case, it returns a 0 and it backtracks to f(1) wit the
 value 0. And then f(1) returns with 1 + 0, and it again backtracks to f(2) with value 1;
 and f(2) returns with value 2+1 and finally finishes f(3) with value 3 + (3) = 6. Nice
+
+
+### 5. Fibonacci Series till some number(Product)
+```cpp
+long long f(int n){
+        if(n==0) return 1;
+        return n*f(n-1);
+    }
+    vector<long long> factorialNumbers(long long N)
+    {
+        // Write Your Code here
+        int i =1;
+        vector<long long> ans;
+        while(f(i)<=N){
+            ans.push_back(f(i));
+            i++;
+        }
+        return ans;
+```
 
 
