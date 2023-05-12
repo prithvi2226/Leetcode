@@ -16,8 +16,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/LIFE/Coding/Leetcode",
-      "program": "c:/LIFE/Coding/Leetcode/build/Debug/outDebug",
+      "cwd": "c:/LIFE/Coding/Leetcode/Recursion-Foundation",
+      "program": "c:/LIFE/Coding/Leetcode/Recursion-Foundation/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
