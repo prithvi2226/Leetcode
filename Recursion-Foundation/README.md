@@ -113,4 +113,5 @@ Output: true
 Explanation: "amanaplanacanalpanama" is a palindrome.*
 
 So we would use the same concept as we used in reversing the array of numbers
+But we will check with strings instead of array elements!!
 
