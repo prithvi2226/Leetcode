@@ -115,3 +115,8 @@ Explanation: "amanaplanacanalpanama" is a palindrome.*
 So we would use the same concept as we used in reversing the array of numbers
 But we will check with strings instead of array elements!!
 
+
+### 7. Multiple recursion calls(FIBANACCI)
+
+First recursion function will be excecuted first, then it will move to the second one.
+
