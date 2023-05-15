@@ -134,8 +134,10 @@ or (char c - 'A')
 
 ### <mark style="background: #ABF7F7A6;">3. Numbers more than 10^6</mark>
 
-Thats where the STL comes in the picture
+Thats where the STL comes in the picture. In STL there are two things:
 
+1. MAP
+2. UNORDERED MAP
 
 
 
