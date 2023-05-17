@@ -3,7 +3,7 @@ Tags: #sorting  #A2z
 understanding: #easy
 ---
 
-## <mark style="background: #ABF7F7A6;">SELECTION SORT</mark>
+## 1. <mark style="background: #ABF7F7A6;">SELECTION SORT</mark>
 
 - As the name suggests, we sleect the minimum
 
@@ -28,6 +28,31 @@ Its fair to say that for 6 elements only 5 operations would take place because i
            std::swap(arr[mini], arr[i]);
        }
 ```
+
+
+
+## 2. <mark style="background: #ABF7F7A6;">BUBBLE SORT</mark>
+
+1. Pushes the maximum to the last *by adjacent swaps*
+2. Exact opposite of selection sort which used to push te minimum to the front.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
