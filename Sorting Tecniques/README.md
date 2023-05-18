@@ -79,6 +79,57 @@ void bubbleSort(int arr[], int n)
 
 
 
+---
+Tags: #sorting  #A2z #insertionsort
+understanding: #easy
+---
+
+## 3. <mark style="background: #ABF7F7A6;">INSERTION SORT</mark>
+
+IT always takes an element and places it on its correct order
+Algorithm starts with looking at the first element in the array.
+
+| 14  | 9   | 15  | 12  | 6   | 8   | 13  |
+| --- | --- | --- | --- | --- | --- | --- |
+
+we take the first element as 14 so we know that 14 is size 1 array and its at the right position. 
+Then we go to the next element and compare to its left 9 and14 9 < 14 so swap (9, 14). now array is 9,14 this is array is perfectly sorted. Now third array 9, 14, 15 already sorted then 12.array looks
+9 ,14, 15, 12, 6, 8, 13
+
+In 12, we go to the left. compare toits left until we meet a element bigger than that. so 12 < 15 we swap. then 12<14 we swap . but not 9!<12. Hence array becomes 9, 12, 14, 15. This array is perfectly sorted.
+
+Therefore we will have 2 loops again. One to select the array. the second loop to insert the array in the right position in the given array.
+
+```cpp
+void insert(int arr[], int i)
+
+    {
+
+        //code here
+
+        int n = i;
+
+        for(int i = 0; i <= n-1; i++){
+
+            int j = i;
+
+            while(j > 0 && arr[j-1] > arr[j]){
+
+                int temp = arr[j-1];
+
+                arr[j-1] = arr[j];
+
+                arr[j] = temp;
+
+                j --;
+
+            }
+
+        }
+
+    }
+```
+
 
 
 
