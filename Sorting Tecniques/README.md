@@ -131,6 +131,20 @@ void insert(int arr[], int i)
 ```
 
 
+[3, 1, 2 ,4, 1, 5, 2, 6, 4]
+
+1. We hypothetically divide the array in 2 equal halves. Lets say, 4 and 5 elements half
+
+![Page1.jpg](./MERGE%20SORT/Page1.jpg)
+
+<img src="./MERGE SOSRT/Page1.jpg" alt="Getting started" />
+
+
+
+
+
+
+
 
 
 
