@@ -170,7 +170,6 @@ We hypothetically divide the array in 2 equal halves. Lets say, 4 and 5 elements
 ![Page15.png](./QUICK%20SORT/Page15.png)
 ![Page16.png](./QUICK%20SORT/Page16.png)
 ![Page17.png](./QUICK%20SORT/Page17.png)
-![Page18.png](./QUICK%20SORT/Page18.png)
 
 
 
