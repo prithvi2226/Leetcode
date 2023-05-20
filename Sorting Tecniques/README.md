@@ -130,17 +130,47 @@ void insert(int arr[], int i)
     }
 ```
 
+## 4. <mark style="background: #ABF7F7A6;">MERGE SORT</mark>
 
 [3, 1, 2 ,4, 1, 5, 2, 6, 4]
 
-1. We hypothetically divide the array in 2 equal halves. Lets say, 4 and 5 elements half
+We hypothetically divide the array in 2 equal halves. Lets say, 4 and 5 elements half
 
 ![Page1.jpg](./MERGE%20SORT/Page1.jpg)
+![Page2.jpg](./MERGE%20SORT/Page2.jpg)
+![Page3.jpg](./MERGE%20SORT/Page3.jpg)
+![Page4.jpg](./MERGE%20SORT/Page4.jpg)
+![Page5.jpg](./MERGE%20SORT/Page5.jpg)
+![Page6.jpg](./MERGE%20SORT/Page6.jpg)
+![Page7.jpg](./MERGE%20SORT/Page7.jpg)
+![Page8.jpg](./MERGE%20SORT/Page8.jpg)
+![Page9.jpg](./MERGE%20SORT/Page9.jpg)
+![Page10.jpg](./MERGE%20SORT/Page10.jpg)
+![Page11.jpg](./MERGE%20SORT/Page11.jpg)
+![Page12.jpg](./MERGE%20SORT/Page12.jpg)
+![Page13.jpg](./MERGE%20SORT/Page13.jpg)
 
-<img src="./MERGE SOSRT/Page1.jpg" alt="Getting started" />
 
+## 5. <mark style="background: #ABF7F7A6;">QUICK SORT</mark>
 
-
+![Page1.jpg](./QUICK%20SORT/Page1.jpg)
+![Page2.jpg](./QUICK%20SORT/Page2.jpg)
+![Page3.jpg](./QUICK%20SORT/Page3.jpg)
+![Page4.jpg](./QUICK%20SORT/Page4.jpg)
+![Page5.jpg](./QUICK%20SORT/Page5.jpg)
+![Page6.jpg](./QUICK%20SORT/Page6.jpg)
+![Page7.jpg](./QUICK%20SORT/Page7.jpg)
+![Page8.jpg](./QUICK%20SORT/Page8.jpg)
+![Page9.jpg](./QUICK%20SORT/Page9.jpg)
+![Page10.jpg](./QUICK%20SORT/Page10.jpg)
+![Page11.jpg](./QUICK%20SORT/Page11.jpg)
+![Page12.jpg](./QUICK%20SORT/Page12.jpg)
+![Page13.jpg](./QUICK%20SORT/Page13.jpg)
+![Page14.jpg](./QUICK%20SORT/Page14.jpg)
+![Page15.jpg](./QUICK%20SORT/Page15.jpg)
+![Page16.jpg](./QUICK%20SORT/Page16.jpg)
+![Page17.jpg](./QUICK%20SORT/Page17.jpg)
+![Page18.jpg](./QUICK%20SORT/Page18.jpg)
 
 
 
