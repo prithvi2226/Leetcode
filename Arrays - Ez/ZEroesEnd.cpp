@@ -2,27 +2,18 @@ class Solution {
 public:
     void moveZeroes(vector<int>& nums) {
 
-        if(nums.size() == 1){
-            std::cout << 1  << std::endl;
-        }
-
-        int second = 0;
-
-
-        for (int i = 0; i < nums.size(); ++i)
-        {
-            /* code */
+        int sec = 0;
+        for(int i = 0; i < nums.size(); i++){
             if(nums[i] != 0){
-                nums[second] = nums[i];
-                second ++;
+                nums[sec] = nums[i];
+                sec++;
             }
         }
 
-        for (int i = second; i < nums.size(); i++)
-        {
-            /* code */
+        for(int i = sec; i < nums.size(); i++){
+
             nums[i] = 0;
         }
-
+        
     }
 };
